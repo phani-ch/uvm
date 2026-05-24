@@ -1,9 +1,9 @@
-class my_sequ_item extends uvm_sequence_item;
+class my_item extends uvm_sequence_item;
 
 // uvm factory regestration
-`uvm_object_utils(my_sequ_item)
+`uvm_object_utils(my_item)
 
-function new(string name ="my_sequ_item");
+function new(string name ="my_item");
         super.new(name);
     endfunction
 
