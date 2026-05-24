@@ -10,7 +10,5 @@ function new(string name ="my_item");
 endclass
 
 
-// class extends uvm_sequence_item;
-//     // uvm factory regestration
-//   function  new(string name ="my_sequ_item");       
+    
 
