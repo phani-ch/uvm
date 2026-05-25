@@ -6,6 +6,11 @@ class my_agent extends uvm_agent;
   function new(string name, uvm_component parent);
     super.new(name, parent);
   endfunction
+
+  my_sequencer seq;
+  my_driver drv;
+  my_monitor mtr;
+    
 endclass
 
 
