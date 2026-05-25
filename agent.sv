@@ -10,7 +10,13 @@ class my_agent extends uvm_agent;
   my_sequencer seq;
   my_driver drv;
   my_monitor mtr;
-    
+
+    function void build_phase(uvm_phase phase);
+        super.build_phase(phase);
+             seqr = my_sequencer::type_id::create("sequencer", this);
+             drv = my_driver::type_id::create("driver", this);
+             mtr= my_monitor::type_id::create("monitor", this);
+  endfunction
 endclass
 
 
