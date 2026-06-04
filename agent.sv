@@ -7,7 +7,7 @@ class my_agent extends uvm_agent;
     super.new(name, parent);
   endfunction
 
-  my_sequencer seq;
+  my_sequencer seqr;
   my_driver drv;
   my_monitor mtr;
 
